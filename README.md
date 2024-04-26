@@ -6,9 +6,13 @@
 
 - Deixei algumas fotos da aplicação para facilitar o entendimento.
 
- ![preview img](/preview.png)
+# Tela principal
  ![preview img](/preview1.png)
+# Busca por um único nome
  ![preview img](/preview2.png.png)
+# Busca Geral 
  ![preview img](/preview3.png.png)
+# Tela de exclusão 
  ![preview img](/preview4.png.png)
+# Nenhum paciente é econtrado
  ![preview img](/preview5.png)
