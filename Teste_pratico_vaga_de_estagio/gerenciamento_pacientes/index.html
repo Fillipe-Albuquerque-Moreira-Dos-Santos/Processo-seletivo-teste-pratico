@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciamento de pacientes para clínicas médicas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="esquerda">
+      <div class="login-box">
+        <h2>Cadastro de Pacientes</h2>
+        <form id="formCadastro" method="POST" action="crud.php">
+          <!-- Adicione um input hidden para indicar a ação -->
+          <input type="hidden" name="action" value="Cadastrar" />
+
+          <div class="user-box">
+            <input type="text" name="nome" id="nome" required />
+            <label>Nome</label>
+          </div>
+
+          <div class="user-box">
+            <input type="date" name="data_nasc" id="data_nasc" required />
+          </div>
+
+          <div class="user-box">
+            <select name="genero" id="genero" required >
+              <option value="">Selecione o Gênero</option>
+              <option value="M">Masculino</option>
+              <option value="F">Feminino</option>
+              <option value="N">Neutro</option>
+            </select>
+          </div>
+
+          <div class="user-box">
+            <input type="text" name="telefone" id="telefone" required />
+            <label>Telefone</label>
+          </div>
+
+
+          <div class="user-box">
+            <input type="text" name="endereco" id="endereco" required />
+            <label>Endereço</label>
+          </div>
+
+          <input class="formCadastro button" type="submit" name="action" value="Cadastrar" />
+        </form>
+      </div>
+      <form id="formBuscarPaciente" method="POST" action="buscar.php">
+        <h2>Buscar Pacientes por Nome</h2>
+        <label for="nome">Nome do Paciente:</label>
+        <input type="text" id="nome" name="nome" />
+        <input type="hidden" name="action" value="Buscar"/>
+        <button type="submit">Buscar</button>
+        <br>
+      </form>
+      
+      
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
