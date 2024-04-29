@@ -14,5 +14,5 @@
  ![preview img](/preview3.png.png)
 # Tela de exclusão 
  ![preview img](/preview4.png.png)
-# Nenhum paciente é econtrado
+# Nenhum paciente é encontrado
  ![preview img](/preview5.png)
